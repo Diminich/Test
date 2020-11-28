@@ -1,3 +1,7 @@
 .wrapperListPage {
+  padding: 0 97px;
 
+  @media (max-width: 768px) {
+    padding: 0 35px;
+  }
 }
