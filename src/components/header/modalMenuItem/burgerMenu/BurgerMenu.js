@@ -84,7 +84,7 @@ const BurgerMenu = ({stateMenu}) => {
                                 addBurgerSubMenu={addBurgerSubMenu}/>
                         </a>
                         {id === showSubMenuElementTwo &&
-                        <div className={styles.subBurgerItem}>
+                        <div key={id} className={styles.subBurgerItem}>
                             {subBurgerElements.map(({id, element, subItemElements}) => {
                                 return (
                                     <>
@@ -121,7 +121,7 @@ const BurgerMenu = ({stateMenu}) => {
                             })}
                         </div>}
                         {id === showSubMenuElementFour &&
-                        <div className={styles.subBurgerItem}>
+                        <div key={id} className={styles.subBurgerItem}>
                             {subBurgerElements.map(({id, element}) => {
                                 return (
                                     <div key={id} className={styles.textSubBurgerItemElement}>

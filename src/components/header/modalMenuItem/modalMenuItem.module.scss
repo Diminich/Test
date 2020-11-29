@@ -9,15 +9,13 @@
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
-    top: 7%;
+    top: 10%;
     opacity: 0;
     transition: 0.5s;
-    @media (max-width: 1600px) {
-      top: 6%;
-    }
+    pointer-events: none;
 
-    @media (max-width: 1400px) {
-      top: 5%;
+    @media (max-width: 376px) {
+      top: 8%;
     }
 
     @media (max-width: 320px) {
@@ -29,6 +27,7 @@
     @extend .modal;
     opacity: 1;
     transition: 0.5s;
+    pointer-events: all;
   }
 
   .modalContent {
@@ -48,12 +47,8 @@
     padding: 0 25px;
     top: 74px;
 
-    @media (max-width: 1600px) {
-      top: 65px;
-    }
-
     @media (max-width: 1400px) {
-      top: 54px;
+      top: 75px;
     }
 
     .textSubElement {
@@ -75,8 +70,8 @@
     .activeModalContent {
       width: 100vw;
       display: flex;
-      position: absolute;
-      top: 0;
+      position: fixed;
+      top: 50px;
       padding: 0;
       margin-bottom: 300px;
     }
