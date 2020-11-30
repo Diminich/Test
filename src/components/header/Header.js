@@ -34,8 +34,7 @@ const Header = () => {
                     {STATE_MENU.map(({id, element}) => {
                         return (
                             <a id={id} className={styles.textMenuElement}
-                               onMouseEnter={() => addSubElements(id)}
-                            >
+                               onMouseEnter={() => addSubElements(id)}>
                                 {element}
                             </a>
                         )

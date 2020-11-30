@@ -9,6 +9,10 @@
   position: fixed;
   background-color: white;
 
+  @media (max-width: 601px) {
+  height: 9%;
+  }
+
   @media (max-width: 376px) {
     height: 8%;
   }
@@ -65,8 +69,12 @@
       left: 460px;
     }
 
-    @media (min-width: 768px) {
+    @media (max-width: 768px) {
       left: 345px;
+    }
+
+    @media (max-width: 610px) {
+      left: 265px;
     }
 
     @media (max-width: 415px) {

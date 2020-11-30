@@ -14,6 +14,10 @@
     transition: 0.5s;
     pointer-events: none;
 
+    @media (max-width: 601px) {
+      top: 9%;
+    }
+
     @media (max-width: 376px) {
       top: 8%;
     }
@@ -51,6 +55,23 @@
       top: 75px;
     }
 
+    @media (max-width: 1000px) {
+      width: 100vw;
+      display: flex;
+      position: fixed;
+      top: 50px;
+      padding: 0;
+      margin-bottom: 300px;
+    }
+
+    @media (max-width: 601px) {
+      top: 60px;
+    }
+
+    @media (max-width: 376px) {
+      top: 53px;
+    }
+
     .textSubElement {
       margin: 0 55px 5px 55px;
       font-weight: 500;
@@ -59,21 +80,6 @@
         margin: 0 0 5px 0;
         font-size: 80%;
       }
-    }
-  }
-
-  @media (max-width: 1000px) {
-    .modalContent {
-      display: none;
-    }
-
-    .activeModalContent {
-      width: 100vw;
-      display: flex;
-      position: fixed;
-      top: 50px;
-      padding: 0;
-      margin-bottom: 300px;
     }
   }
 }
