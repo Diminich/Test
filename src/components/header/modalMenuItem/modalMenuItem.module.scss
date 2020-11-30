@@ -9,21 +9,13 @@
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
-    top: 10%;
+    top: 75px;
     opacity: 0;
     transition: 0.5s;
     pointer-events: none;
 
-    @media (max-width: 601px) {
-      top: 9%;
-    }
-
-    @media (max-width: 376px) {
-      top: 8%;
-    }
-
-    @media (max-width: 320px) {
-      top: 9%;
+    @media (max-width: 1000px) {
+      top: 50px;
     }
   }
 
@@ -51,10 +43,6 @@
     padding: 0 25px;
     top: 74px;
 
-    @media (max-width: 1400px) {
-      top: 75px;
-    }
-
     @media (max-width: 1000px) {
       width: 100vw;
       display: flex;
@@ -62,14 +50,6 @@
       top: 50px;
       padding: 0;
       margin-bottom: 300px;
-    }
-
-    @media (max-width: 601px) {
-      top: 60px;
-    }
-
-    @media (max-width: 376px) {
-      top: 53px;
     }
 
     .textSubElement {
